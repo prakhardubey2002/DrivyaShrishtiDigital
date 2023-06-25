@@ -1,12 +1,8 @@
 var typed = new Typed(".text-slider", {
     strings: [
-        // "Customers",
-        "Reach",
-        "Profit",
-        "Growth",
+        "Leads",
+        "profit",
         "Sales",
-        // "Productivity",
-
     ],
     typeSpeed: 90,
     backSpeed: 60,
