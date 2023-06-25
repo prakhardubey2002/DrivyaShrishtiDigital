@@ -307,7 +307,57 @@
  /* .text-slider{
     font-size: 0.8rem;
 } */
+.services{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    min-height: 70vh;
+}
+.services .Heading h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    word-spacing: 1rem;
+    text-align: center;
+}
+.services .servicelist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.services .servicelist .serviceitemcard .image{
+   
+    width: fit-content;
+    /* border-radius: 62rem; */
+    
+}
+.services .servicelist .serviceitemcard{
+    border: 1px solid var(--Tertiary);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+      /* background: rgba(255, 255, 255, 0.5); */
+     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+     border-radius: 36px;
+     /* /* backdrop-filter: blur(10px); */
+     min-height: 440px;
+     max-width: 320px;
+     margin: 0.2rem 1rem;
 
+}
+.services .servicelist .serviceitemcard .title h2{
+    font-weight: 800;
+    font-size: 1.24rem;
+    color: #fff;
+}
+.services .servicelist .serviceitemcard  p{
+    color: #fff;
+}
  @media (min-width: 768px) and (max-width: 1023px) {
      .homecontent .left .heading h1 {
          font-size: 2rem;
@@ -329,6 +379,11 @@
 
      .Home .navbar .animate-charcter {
          display: none;
+     }
+     .services .servicelist .serviceitemcard{
+        /* max-width: 95vw; */
+        margin: 0.5rem 0.5rem;
+       
      }
  }
 
@@ -352,6 +407,11 @@
 
      .Home .navbar .animate-charcter {
          display: none;
+     }
+     .services .servicelist .serviceitemcard{
+        max-width: 95vw;
+        margin: 0.5rem 0;
+       
      }
  }
 
