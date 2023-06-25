@@ -28,13 +28,13 @@
 
  ::-webkit-scrollbar-track {
      width: 13px;
-     background: var(--Quaternary);
+     background: #171628;
      border-left: 0px solid var(--tertiary);
      border-right: 0px solid var(--tertiary);
  }
 
  ::-webkit-scrollbar-thumb {
-     background: var(--Secondary);
+     background: #3c2355;
      width: 0%;
      height: 35%;
      transition: 0.5 ease;
@@ -53,7 +53,8 @@
      min-height: 100vh;
      min-width: 100vw;
      background-color: #0093E9;
-     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+     /* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+     background-image: linear-gradient(160deg, #171628 0%, #bb4ff1 100%);
 
 
  }
@@ -68,6 +69,39 @@
      height: auto;
      min-width: 100vw;
      /* background-color: #bb7beb; */
+     position: relative;
+     z-index: 0;
+
+ }
+
+ .section1::after {
+     width: 150px;
+     height: 150px;
+     content: '';
+     position: absolute;
+     top: 0;
+     right: 0;
+     background-color: #74cacb;
+     z-index: -1;
+     border-radius: 5rem;
+     /* backdrop-filter: blur(10px); */
+     filter: blur(80px);
+     opacity: 0.7;
+ }
+
+ .section1::before {
+     width: 150px;
+     height: 150px;
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     background-color: #74cacb;
+     z-index: -1;
+     border-radius: 5rem;
+     /* backdrop-filter: blur(10px);  */
+     filter: blur(80px);
+     opacity: 0.7;
  }
 
  .Home .navbar {
@@ -307,57 +341,64 @@
  /* .text-slider{
     font-size: 0.8rem;
 } */
-.services{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    min-height: 70vh;
-}
-.services .Heading h1{
-    font-size: 3rem;
-    font-weight: 600;
-    color: #fff;
-    word-spacing: 1rem;
-    text-align: center;
-}
-.services .servicelist{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-.services .servicelist .serviceitemcard .image{
-   
-    width: fit-content;
-    /* border-radius: 62rem; */
-    
-}
-.services .servicelist .serviceitemcard{
-    border: 1px solid var(--Tertiary);
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-      /* background: rgba(255, 255, 255, 0.5); */
+ .services {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     padding: 2rem;
+     min-height: 70vh;
+ }
+
+ .services .Heading h1 {
+     font-size: 3rem;
+     font-weight: 600;
+     color: #fff;
+     word-spacing: 1rem;
+     text-align: center;
+ }
+
+ .services .servicelist {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: flex-start;
+ }
+
+ .services .servicelist .serviceitemcard .image {
+
+     width: fit-content;
+     /* border-radius: 62rem; */
+
+ }
+
+ .services .servicelist .serviceitemcard {
+     border: 1px solid var(--Tertiary);
+     display: flex;
+     flex-direction: column;
+     padding: 1rem;
+     /* background: rgba(255, 255, 255, 0.5); */
      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
      border-radius: 36px;
      /* /* backdrop-filter: blur(10px); */
      min-height: 440px;
      max-width: 320px;
-     margin: 0.2rem 1rem;
+     margin: 0.5rem 1rem;
 
-}
-.services .servicelist .serviceitemcard .title h2{
-    font-weight: 800;
-    font-size: 1.24rem;
-    color: #fff;
-}
-.services .servicelist .serviceitemcard  p{
-    color: #fff;
-}
+ }
+
+ .services .servicelist .serviceitemcard .title h2 {
+     font-weight: 800;
+     font-size: 1.24rem;
+     color: #fff;
+ }
+
+ .services .servicelist .serviceitemcard p {
+     color: #fff;
+ }
+
  @media (min-width: 768px) and (max-width: 1023px) {
      .homecontent .left .heading h1 {
          font-size: 2rem;
@@ -380,11 +421,12 @@
      .Home .navbar .animate-charcter {
          display: none;
      }
-     .services .servicelist .serviceitemcard{
-         margin: 0.5rem 0.5rem;
+
+     .services .servicelist .serviceitemcard {
+         margin: 0.5rem;
          width: auto;
          max-width: 98vw;
-         
+
      }
  }
 
@@ -409,11 +451,12 @@
      .Home .navbar .animate-charcter {
          display: none;
      }
-     .services .servicelist .serviceitemcard{
-        /* max-width: 95vw; */
-        margin: 0.5rem 0;
-        min-height: 320px;
-       
+
+     .services .servicelist .serviceitemcard {
+         /* max-width: 95vw; */
+         margin: 0.5rem 0;
+         min-height: 320px;
+
      }
  }
 
