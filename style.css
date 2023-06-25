@@ -545,12 +545,12 @@
 
  .logos:before {
      left: 0;
-     background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+     /* background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255)); */
  }
 
  .logos:after {
      right: 0;
-     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+     /* background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255)); */
  }
 
  .logo_items {
@@ -563,5 +563,6 @@
  }
 
  .logo_items img {
-     height: 100px;
+     height: 80px;
+     margin-left: 0.4rem;
  }
