@@ -1,0 +1,450 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+ * {
+     margin: 0%;
+     padding: 0%;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+ }
+
+ html {
+     scroll-behavior: smooth;
+     overflow-x: hidden;
+
+ }
+
+ :root {
+     --Primary: #fff;
+     --Secondary: #282828;
+     --Tertiary: #06f49e;
+     --Quaternary:
+
+         #74cacb;
+ }
+
+ ::-webkit-scrollbar {
+     width: 13px;
+ }
+
+ ::-webkit-scrollbar-track {
+     width: 13px;
+     background: var(--Quaternary);
+     border-left: 0px solid var(--tertiary);
+     border-right: 0px solid var(--tertiary);
+ }
+
+ ::-webkit-scrollbar-thumb {
+     background: var(--Secondary);
+     width: 0%;
+     height: 35%;
+     transition: 0.5 ease;
+     cursor: pointer;
+     border-radius: 12px;
+ }
+
+ .Home {
+     /* background: #fbfbff; */
+     /* fallback for old browsers */
+     /* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); */
+     /* Chrome 10-25, Safari 5.1-6 */
+     /* background: linear-gradient(to right, #aac9da, #c1b0dd, #c0b0d9); */
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+     min-height: 100vh;
+     min-width: 100vw;
+     background-color: #0093E9;
+     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+
+ }
+
+ .section1 {
+     /* background: #fbfbff; */
+     /* fallback for old browsers */
+     /* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); */
+     /* Chrome 10-25, Safari 5.1-6 */
+     /* background: linear-gradient(to right, #aac9da, #c1b0dd, #c0b0d9); */
+     min-height: 100vh;
+     height: auto;
+     min-width: 100vw;
+     /* background-color: #bb7beb; */
+ }
+
+ .Home .navbar {
+     height: 15vh;
+     width: 100vw;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 2rem;
+     /* background: rgba(255, 255, 255, 0.05);
+     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+     /* border-radius: 36px; */
+     /* backdrop-filter: blur(10px); */
+ }
+
+ .navlogo {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .Home .navbar .logo {
+     /* max-width: 160px; */
+     /* object-fit: contain; */
+     position: relative;
+     width: 120px;
+     height: 14vh;
+     /* border-radius: 50%; */
+     overflow: hidden;
+     /* background-color: #06f49e; */
+     /* padding: 0.3rem; */
+ }
+
+ .Home .navbar .logo img {
+     position: absolute;
+     top: 0%;
+     left: 0%;
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
+ }
+
+ .title {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .Home .navbar .animate-charcter {
+     /* text-transform: uppercase; */
+     /* background-image: linear-gradient(-225deg, */
+     /* var(--Tertiary) 0%, */
+     /* #44107a 49%, */
+     /* #ff1361 67%, */
+     /* #fff 100%); */
+     /* background-size: auto auto; */
+     /* background-clip: border-box; */
+     /* background-size: 200% auto; */
+     /* color: #fff; */
+     /* background-clip: text; */
+     /* text-fill-color: transparent; */
+     /* -webkit-background-clip: text; */
+     /* -webkit-text-fill-color: transparent; */
+     /* animation: textclip 2s linear infinite; */
+     /* display: inline-block; */
+     font-size: 1.4rem;
+     letter-spacing: 1px;
+     color: #fff;
+ }
+
+ @keyframes textclip {
+     to {
+         background-position: 200% center;
+     }
+ }
+
+ button {
+     position: relative;
+     padding: 15px 45px;
+     background: #2ecc71;
+     font-size: 17px;
+     font-weight: 500;
+     color: #f0eeee;
+     /* border: 1px solid #FEC195; */
+     border-radius: 28px;
+     filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .2));
+     border: 1px solid #f0eeee;
+     /* background: linear-gradient(85deg, #FEC195, #fcc196, #fabd92, #fac097, #fac39c); */
+     animation: wind ease infinite;
+ }
+
+ button a {
+     text-decoration: none;
+     color: inherit;
+ }
+
+ @keyframes wind {
+     0% {
+         background-position: 0% 50%;
+     }
+
+     0% {
+         background-position: 50% 100%;
+     }
+
+     0% {
+         background-position: 0% 50%;
+     }
+ }
+
+ .icon-1 {
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 25px;
+     transform-origin: 0 0;
+     transform: rotate(10deg);
+     transition: all .5s ease;
+     filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .3));
+     animation: slay-1 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
+     transform: rotate(10deg);
+ }
+
+ @keyframes slay-1 {
+     0% {
+         transform: rotate(10deg);
+     }
+
+     50% {
+         transform: rotate(-5deg);
+     }
+
+     100% {
+         transform: rotate(10deg);
+     }
+ }
+
+ .icon-2 {
+     position: absolute;
+     top: 0;
+     left: 25px;
+     width: 12px;
+     transform-origin: 50% 0;
+     transform: rotate(10deg);
+     transition: all 1s ease-in-out;
+     filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .5));
+     animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+     transform: rotate(0);
+ }
+
+ @keyframes slay-2 {
+     0% {
+         transform: rotate(0deg);
+     }
+
+     50% {
+         transform: rotate(15deg);
+     }
+
+     100% {
+         transform: rotate(0);
+     }
+ }
+
+ .icon-3 {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 18px;
+     transform-origin: 50% 0;
+     transform: rotate(-5deg);
+     transition: all 1s ease-in-out;
+     filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .5));
+     animation: slay-3 2s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+     transform: rotate(0);
+ }
+
+ @keyframes slay-3 {
+     0% {
+         transform: rotate(0deg);
+     }
+
+     50% {
+         transform: rotate(-5deg);
+     }
+
+     100% {
+         transform: rotate(0);
+     }
+ }
+
+ .homecontent {
+     display: flex;
+     flex-wrap: wrap;
+     padding: 4rem;
+     align-items: center;
+     justify-content: center;
+     min-height: 70vh;
+ }
+
+ .homecontent .left {
+     display: flex;
+     flex-direction: column;
+
+     max-width: 40vw;
+     height: 100%;
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     /* background-color: #06f49e; */
+ }
+
+ .homecontent .left .heading h1,
+ .typewriter {
+     font-size: 4rem;
+     font-weight: 600;
+     color: #fff;
+     word-spacing: 1rem;
+ }
+
+ .homecontent .left .heading p {
+     /* word-spacing: 4px; */
+     color: #ffffff;
+     font-weight: 400;
+     line-height: 1.4rem;
+ }
+
+ .homecontent .right {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     max-width: 40vw;
+     height: 100%;
+     padding: 2rem;
+ }
+
+ /* .text-slider{
+    font-size: 0.8rem;
+} */
+
+ @media (min-width: 768px) and (max-width: 1023px) {
+     .homecontent .left .heading h1 {
+         font-size: 2rem;
+         width: fit-content;
+     }
+
+     .homecontent .left .heading p {
+         font-size: 16px;
+     }
+
+     .homecontent .right {
+         width: 40vw;
+     }
+
+     button {
+         font-size: 16px;
+         padding: 12px 35px;
+     }
+
+     .Home .navbar .animate-charcter {
+         display: none;
+     }
+ }
+
+ @media (max-width:628px) {
+     .homecontent .left {
+         max-width: 100%;
+     }
+
+     .homecontent .left .heading h1 {
+         font-size: 32px;
+     }
+
+     .homecontent .right {
+         max-width: 100%;
+     }
+
+     button {
+         font-size: 14px;
+         padding: 10px 30px;
+     }
+
+     .Home .navbar .animate-charcter {
+         display: none;
+     }
+ }
+
+
+
+
+
+ /* Typewriter effect Css */
+ .typewriter {
+     overflow: hidden;
+     /* Ensures the content is not revealed until the animation */
+     border-right: .1em solid rgb(255, 255, 255);
+     /* The typwriter cursor */
+     white-space: nowrap;
+     /* Keeps the content on a single line */
+     /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+     /* letter-spacing: .15em; Adjust as needed */
+     animation:
+         typing 4.5s steps(40, end) infinite alternate,
+         blink-caret .75s step-end infinite;
+ }
+
+ /* The typing effect */
+ @keyframes typing {
+     from {
+         width: 0
+     }
+
+     to {
+         width: 100%
+     }
+ }
+
+ /* The typewriter cursor effect */
+ @keyframes blink-caret {
+
+     from,
+     to {
+         border-color: transparent
+     }
+
+     50% {
+         border-color: rgb(255, 255, 255);
+     }
+ }
+
+ /* Slider Css */
+ @keyframes slides {
+     from {
+         transform: translateX(0);
+     }
+
+     to {
+         transform: translateX(-100%);
+     }
+ }
+
+ .logos {
+     overflow: hidden;
+     padding: 30px 0px;
+     white-space: nowrap;
+     position: relative;
+ }
+
+ .logos:before,
+ .logos:after {
+     position: absolute;
+     top: 0;
+     content: '';
+     width: 250px;
+     height: 100%;
+     z-index: 2;
+ }
+
+ .logos:before {
+     left: 0;
+     background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+ }
+
+ .logos:after {
+     right: 0;
+     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+ }
+
+ .logo_items {
+     display: inline-block;
+     animation: 35s slides infinite linear;
+ }
+
+ .logos:hover .logo_items {
+     animation-play-state: paused;
+ }
+
+ .logo_items img {
+     height: 100px;
+ }
