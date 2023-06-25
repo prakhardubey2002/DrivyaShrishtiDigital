@@ -378,7 +378,7 @@
      flex-direction: row;
      flex-wrap: wrap;
      align-items: center;
-     justify-content: flex-start;
+     justify-content: center;
  }
 
  .services .servicelist .serviceitemcard .image {
@@ -399,7 +399,7 @@
      /* /* backdrop-filter: blur(10px); */
      min-height: 440px;
      max-width: 320px;
-     margin: 0.5rem 1rem;
+     margin: 0.5rem 2rem;
 
  }
 
