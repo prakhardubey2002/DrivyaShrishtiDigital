@@ -962,7 +962,10 @@
         min-height: 1rem;
       }
       .column p{
-        display: none;
+        /* display: none; */
+      }
+      .subscribe p:nth-child(1){
+        /* display: none; */
       }
   
   }
