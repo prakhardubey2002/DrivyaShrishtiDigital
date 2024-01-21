@@ -58,7 +58,14 @@
 
 
  }
-
+/* .Home .topbar{
+    max-height: 10vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+} */
  .section1 {
      /* background: #fbfbff; */
      /* fallback for old browsers */
